@@ -75,7 +75,7 @@ screen = (422, 153)
 screen = (600, 400)
 fps = 60
 class Compare:
-  def correct_method(shapes):
+  def correct_method(shapes): # farce
     shapes_n = sorted([shape.shape for shape in shapes])
     return getattr(Compare, "_".join(shapes_n))(*shapes)
 
